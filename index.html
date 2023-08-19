@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Merriweather&family=Montserrat&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              //Primary
+
+              darkCyan: "hsl(185, 75%, 39%)",
+              veryDarkDesaturatedBlue: "hsl(229, 23%, 23%)",
+              darkGrayishBlue: "hsl(227, 10%, 46%)",
+
+              //Neutral
+
+              DarkGray: "hsl(0, 0%, 59%)",
+            },
+            fontFamily: {
+              sans: ["Kumbh Sans",'san-serif'],
+            },
+            screen: {
+              sm: "375px",
+              xl: "1440px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="text-18px fontFamily-Kumbh Sans">
+    
+    <!-- Global container -->
+    <div class="flex flex-col items-center justify-center relative bg-darkCyan min-h-screen overflow-hidden">
+      
+      <img src="images/bg-pattern-top.svg" class="absolute scale-150 md:scale-100 -top-36 -left-64 md:-top-[35rem] md:-left-[20rem]" alt="">
+      <img src="images/bg-pattern-bottom.svg" class="absolute scale-150 md:scale-100 -bottom-24 -right-[18rem] md:-bottom-[43rem] md:-right-[16rem]" alt=""> 
+
+      <!-- card cantainer -->
+      <div class=" relative rounded-xl shadow-xl ">
+
+        <!-- top part of card -->
+        <div >
+          <img src="images/bg-pattern-card.svg" class="rounded-t-2xl" alt="">
+
+        </div>
+
+        <!-- middle part of container -->
+
+        <div class="flex items-center justify-center bg-white text-black ">
+
+          <img src="images/image-victor.jpg" class="rounded-full absolute top-24 border-white border-4 " alt="">
+
+          <div class="">
+            
+            <div class="flex flex-row gap-3 pt-20">
+              <div class="font-bold text-xl ">
+                Victor Crest
+              </div>
+              <div class="text-xl text-darkGrayishBlue">26</div>
+
+            </div>
+
+            <p class="text-center text-darkGrayishBlue p-2 mb-5 ">London</p>
+          </div>
+        </div>
+
+        <!-- bottom part of container -->
+
+        <div class="flex flex-row bg-white border rounded-b-xl w-full items-center justify-center p-4 gap-12">
+
+          <div >
+            <h2 class="font-bold text-center text-xl">80K</h2>
+            <p class="text-darkGrayishBlue text-xs tracking-widest ">Followers</p>
+          </div>
+
+          <div >
+            <h2 class="font-bold text-center text-xl ">803K</h2>
+            <p class="text-darkGrayishBlue text-xs tracking-widest text-center">Likes</p>
+          </div>
+
+          <div >
+            <h2 class="font-bold text-center  text-xl">1.4K</h2>
+            <p class="text-darkGrayishBlue text-xs tracking-widest ">Photos</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      
+    </div>
+
+
+  </body>
+</html>
